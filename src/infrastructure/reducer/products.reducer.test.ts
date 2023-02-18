@@ -1,19 +1,7 @@
+import { mockProd } from "../../mocks/mocks";
 import { Product } from "../models/product";
 import { actionTypes } from "./products.action.types";
 import { productsReducer } from "./products.reducer";
-
-const mockProd = {
-    id: 1,
-    title: "T-shirt",
-    price: 45,
-    description: "Cute",
-    category: "Woman",
-    image: "url",
-    rating: {
-        rate: 6,
-        count: 4,
-    },
-};
 
 describe("Given the productsReducer", () => {
     let action: { type: string; payload: unknown };
