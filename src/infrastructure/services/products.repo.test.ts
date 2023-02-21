@@ -1,10 +1,10 @@
 import { mockProd } from "../../mocks/mocks";
 import { Product } from "../models/product";
-import { EcommerceRepo } from "./ecommerce.repo";
+import { ProductsRepo } from "./products.repo";
 import { Repo } from "./repo";
 
-describe("Given the EcommerceRepo", () => {
-    let service: Repo<Product> = new EcommerceRepo();
+describe("Given the ProductsRepo", () => {
+    let service: Repo<Product> = new ProductsRepo();
 
     describe("When we instantiate GETALLPRODUCTS", () => {
         test("Then it should return all the products", async () => {
