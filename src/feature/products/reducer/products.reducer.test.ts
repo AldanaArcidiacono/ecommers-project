@@ -1,4 +1,4 @@
-import { mockProd } from "../../mocks/mocks";
+import { mockProd } from "../mocks/mocks.products";
 import { Product } from "../models/product";
 import { actionTypes } from "./products.action.types";
 import { productsReducer } from "./products.reducer";

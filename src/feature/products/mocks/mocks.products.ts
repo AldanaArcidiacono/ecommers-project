@@ -1,4 +1,4 @@
-import { Product } from "../infrastructure/models/product";
+import { Product } from "../models/product";
 
 export const mockProd: Product = {
     id: 1,

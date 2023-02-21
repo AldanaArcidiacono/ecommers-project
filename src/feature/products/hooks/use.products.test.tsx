@@ -1,10 +1,10 @@
 /* eslint-disable testing-library/no-render-in-setup */
 import { renderHook } from "@testing-library/react";
 import { Provider } from "react-redux";
-import { mockProd } from "../../mocks/mocks";
+import { appStore } from "../../../core/store/store";
+import { mockProd } from "../mocks/mocks.products";
 import { Product } from "../models/product";
 import { ProductsRepo } from "../services/products.repo";
-import { appStore } from "../store/store";
 import { useProducts } from "./use.products";
 
 jest.mock("../services/products.repo");
