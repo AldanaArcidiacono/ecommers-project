@@ -1,7 +1,6 @@
 import { Product } from "../../models/product";
 import ProductItem from "../product.item/product.item";
 import { StyledProductList } from "../styles/products.list.styled";
-import "./products.list.scss";
 
 export default function ProductList({ item }: { item: Product[] }) {
     return (
