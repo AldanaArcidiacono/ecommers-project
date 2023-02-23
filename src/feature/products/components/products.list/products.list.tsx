@@ -1,17 +1,19 @@
 import { Product } from "../../models/product";
 import ProductItem from "../product.item/product.item";
+import { StyledProductList } from "../styles/products.list.styled";
+import "./products.list.scss";
 
 export default function ProductList({ item }: { item: Product[] }) {
     return (
         <>
             <h2>All Products</h2>
-            <ul>
+            <StyledProductList>
                 {item.map((item) => (
                     <li key={item.id}>
                         <ProductItem item={item}></ProductItem>
                     </li>
                 ))}
-            </ul>
+            </StyledProductList>
         </>
     );
 }
